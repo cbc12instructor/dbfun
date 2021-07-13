@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Simple Database Demo</title>
+
+		<script src="/js/db.js"></script>
+	</head>
+	<body>
+		
+		<h1>DB Examples</h1>
+
+		<div style="background-color:#bbb;border:1px solid #000;width: 250px;float:left;">
+			<ul id="current_users"></ul>
+		</div>
+
+		<div id="form" style="padding-left:10px;margin-left:10px;float:left;width: 500px;background-color:#eee;border:1px solid #000;">
+			<h2 id="user_heading">Add New User</h2>
+
+			<form id="user_form" action="/user" method="post">
+				<label for="firstname">First Name</label>
+				<input type="text" name="firstname" id="firstname">
+
+				<br><br>
+
+				<label for="lastname">Last Name</label>
+				<input type="text" name="lastname" id="lastname">
+				
+				<br><br>
+
+				<label for="email">Email</label>
+				<input type="text" name="email" id="email">
+
+				<br><br>
+
+				<input id="submit_button" type="submit" value="Create User">
+			</form>
+		</div>
+
+
+	</body>
+</html>
